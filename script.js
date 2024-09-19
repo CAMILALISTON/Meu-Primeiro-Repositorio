@@ -59,3 +59,86 @@ function executar1009(){
     comissao = (totalVendas*0.15)+salario
     alert("ID: "+id + "\nSalário R$" +comissao.toFixed(2));
 }
+
+function executar1010(){
+    let id = Number(prompt("Digite qual produto deseja cadastrar:"));
+    let qdt  = Number(prompt("Digite a quantidade do produto"));
+    let valor = Number(prompt("Digite o valor unitario do produto"));
+    let id2 = Number(prompt("Digite qual produto deseja cadastrar:"));
+    let qdt2  = Number(prompt("Digite a quantidade do produto"));
+    let valor2 = Number(prompt("Digite o valor unitario do produto"));
+
+    let valorTotal = (qdt+qdt2)*(valor+valor2)
+
+    alert("O valor a pagar é: R$"+valorTotal.toFixed(2));
+}
+
+function executar1011(){
+    let raio = Number(prompt("Digite o raio da esfera:"));
+    let pi = 3.14159
+    let volume = (4/3) * pi * Math.pow(raio,3)
+
+   alert("O volume é: "+volume.toFixed(3))
+}
+
+function executar1012(){
+    let ladoA = Number(prompt("Digite o lado A:"));
+    let ladoB = Number(prompt("Digite o lado B:"));
+    let base = Number(prompt("Digite o tamanho da base:"));
+    let pi = 3.14159;
+    let triangulo = (ladoA*base)/2;
+    let circulo = pi*(base*base);
+    let trapezio = ((ladoA+ladoB)*base)/2;
+    let quadrado = ladoB*ladoB
+    let retangulo = ladoA*ladoB
+
+    alert("Triangulo: "+triangulo +"\nCirculo: " +circulo + "\nTrapezio: "+trapezio + "\nQuadrado: "+quadrado + "\nRetangulo: "+retangulo)
+}
+
+// function executar1013(){
+//     let valorA = Number(prompt("Digite o valor:"));
+//     let valorB = Number(prompt("Digite o valor:"));
+//     let valorC = Number(prompt("Digite o valor:"));
+//     let abs = 0
+//     let maior = (valorA+valorB+abs(valorA+valorB))/2
+
+//     alert("O maior valor é: "+maior)
+
+// }
+
+function executar1014(){
+    let distanciaTotal = Number(prompt("Digite a distancia percorrida em Km:"));
+    let combustivelTotal = Number(prompt("Digite o quanto de combustivel foi gasto em Litros:"));
+    let consumo = distanciaTotal/combustivelTotal
+
+    alert("O consumo do seu veiculo foi de "+consumo.toFixed(3)+"km/l")
+
+}
+
+function executar1015(){
+    let x1 = Number(prompt("Digite o valor:"));
+    let x2 = Number(prompt("Digite o valor:"));
+    let y1 = Number(prompt("Digite o valor:"));
+    let y2 = Number(prompt("Digite o valor:"));
+    let distancia = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2)); 
+
+    alert("A distancia é: "+distancia)
+}
+
+// function executar1016(){
+//     let carrox = 60
+//     let carroy = 90
+//     let tempo = 60
+
+
+
+// }
+
+function executar1017(){
+    let kml = Number(prompt("Digite a km/litro que seu carro realiza:"));
+    let tempo = Number(prompt("Digite o tempo da viagem:"));
+    let velocidade = Number(prompt("Digite a velocidade media:"));
+    let combustivelgasto = (tempo*velocidade)/kml 
+    
+    alert("O combustivel gasto é de: "+combustivelgasto.toFixed(3));
+}
