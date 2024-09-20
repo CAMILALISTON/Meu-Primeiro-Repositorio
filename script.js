@@ -125,14 +125,25 @@ function executar1015(){
     alert("A distancia é: "+distancia)
 }
 
-// function executar1016(){
-//     let carrox = 60
-//     let carroy = 90
-//     let tempo = 60
+function executar1016(){
+    let distancia = Number(prompt("Qual a distancia designada?"));
+    let distanciax = 0;
+    let distanciay = 0;
+    let tempo = 0
 
+    while(distanciay-distanciax < distancia){
+        distanciax += 1
+        distanciay += 1.5
+        tempo++
+        console.log('y: ' + distanciay);
+        console.log('x: ' + distanciax);
+        console.log('tempo: ' + tempo);
+        console.log('Diferença: ' + (distanciay-distanciax));
+        console.log('----------------------');
+    }
+    alert("Vai levar "+tempo+" minutos")
 
-
-// }
+}
 
 function executar1017(){
     let kml = Number(prompt("Digite a km/litro que seu carro realiza:"));
@@ -141,4 +152,75 @@ function executar1017(){
     let combustivelgasto = (tempo*velocidade)/kml 
     
     alert("O combustivel gasto é de: "+combustivelgasto.toFixed(3));
+}
+
+function executar1038(){
+    let codigo = Number(prompt("Digite o codigo do produto:"));
+    let quantidade = Number(prompt("Digite a quantidade do produto:"));
+    let total = codigo * quantidade;
+
+    if(codigo == 1){
+         total = 4 * quantidade;
+
+     }
+
+    else if(codigo == 2){
+        total = 4.5 * quantidade;
+
+        alert("O valor é R$"+total.toFixed(2));
+    }
+
+    else if(codigo == 3){
+        total = 5 * quantidade;
+
+        alert("O valor é R$"+total.toFixed(2));
+    }
+
+    else if(codigo == 4){
+        total = 2 * quantidade;
+
+        alert("O valor é R$"+total.toFixed(2));
+    }
+
+    else if(codigo == 5){
+        total = 1.5 * quantidade;
+
+        alert("O valor é R$"+total.toFixed(2));
+    }
+
+    else{
+        alert("Codigo inexistente")
+    }
+}
+
+function executar1050(){
+    let codigodearea = Number(prompt("Digite o DDD:"));
+
+    if (codigodearea == 11){
+        alert("O DDD é de São Paulo");
+    }
+    else if (codigodearea == 61){
+        alert("O DDD é de Brasília");
+    }
+    else if (codigodearea == 71){
+        alert("O DDD é de Salvador");
+    }
+    else if (codigodearea == 21){
+        alert("O DDD é de Rio de Janeiro");
+    }
+    else if (codigodearea == 32){
+        alert("O DDD é de Juiz de Fora");
+    }
+    else if (codigodearea == 19){
+        alert("O DDD é de Campinas");
+    }
+    else if (codigodearea == 27){
+        alert("O DDD é de Vitoria");
+    }
+    else if (codigodearea == 31){
+        alert("O DDD é de Belo Horizonte");
+    }
+    else{
+        alert("DDD não cadastrado")
+    }
 }
