@@ -224,3 +224,23 @@ function executar1050(){
         alert("DDD não cadastrado")
     }
 }
+
+function executar1115(){
+    let x = Number(prompt("Digite o valor de X"));
+    let y = Number(prompt("Digite o valor de Y"));
+    
+    if(x > 0 && y > 0){
+        alert("Quadrante 1")
+    }
+    else if(x < 0 && y < 0){
+        alert("Quadrate 2")
+    }
+    else if(x > 0 && y < 0){
+        alert("Quadrante 3")
+    }
+    else if(x < 0 && y > 0){
+        alert("Quadrante 4")
+    }
+
+}
+
