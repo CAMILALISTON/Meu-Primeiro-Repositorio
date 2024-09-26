@@ -244,3 +244,24 @@ function executar1115(){
 
 }
 
+function executar1142(){
+    let cont = 1
+    let contagem = 0
+    let limite = Number(prompt("Digique um número:"));
+    let acumulador = ""
+    while(contagem < limite){
+        if(cont % 4 != 0){
+            console.log(cont);
+            acumulador += cont + " "
+        }
+        else{
+            console.log("PUM");
+            contagem++
+            acumulador += "PUM\n"
+        }
+        cont++;
+    }
+    alert(acumulador);
+
+}
+
